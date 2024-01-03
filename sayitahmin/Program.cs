@@ -6,8 +6,6 @@
         {
             Console.WriteLine("Sayı Tahmin Oyunu!");
 
-            while (true)
-            {
                 Console.WriteLine("Kolay, Orta veya Zor leveli seçin:");
                 Console.WriteLine("Kolay için 1, Orta için 2, Zor için 3 girin:");
 
@@ -89,9 +87,9 @@
                 if (again != "evet")
                 {
                     Console.WriteLine("Teşekkürler.");
-                    break;
+                    
                 }
-            }
+           
         }
     }
 }
