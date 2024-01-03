@@ -5,26 +5,26 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Sayı Tahmin Oyunu!");
+            Console.WriteLine("Kolay, Orta veya Zor leveli seçin:");
+            Console.WriteLine("Kolay için 1, Orta için 2, Zor için 3 girin:");
 
-                Console.WriteLine("Kolay, Orta veya Zor leveli seçin:");
-                Console.WriteLine("Kolay için 1, Orta için 2, Zor için 3 girin:");
+            int max = 0;
+            int level = int.Parse(Console.ReadLine());
 
-                int max = 0;
-                int level = int.Parse(Console.ReadLine());
-
-                if (level == 1)
-                {
-                    max = 5;
-                }
-                else if (level == 2)
-                {
-                    max = 3;
-                }
-                else if (level == 3)
-                {
-                    max = 1;
-                }
-
+            if (level == 1)
+            {
+                max = 5;
+            }
+            else if (level == 2)
+            {
+                max = 3;
+            }
+            else if (level == 3)
+            {
+                max = 1;
+            }
+            while (true)
+            {
                 Random random = new Random();
                 int randomNumber = random.Next(1, 11); // 1 ile 10 arasında rastgele bir sayı seç
 
@@ -87,9 +87,9 @@
                 if (again != "evet")
                 {
                     Console.WriteLine("Teşekkürler.");
-                    
+                    break;
                 }
-           
+            }
         }
     }
 }
